@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="angCleanCity" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styleTable.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script language="JavaScript" src="angular-simple-logger.js"></script>
+	<script language="JavaScript" src="lodash.min.js"></script>	
+	<script language="JavaScript" src="angular-google-maps.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>
+	<script language="JavaScript" src="Generic.js"></script>
+	<script language="JavaScript" src="Angular.js"></script>
+    <title>CleanCity</title>
+</head>
+<body ng-controller="myCtrl" role="document">
+	<div class="container theme-showcase">
+		<nav class="navbar navbar-inverse navbar-fixed-top">	
+				<div class="navbar-header">
+					<img class="img-rounded" src=".\icon.png" alt="C" width="50" height="50"/>
+				</div>
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">CleanCity</a>
+				</div>
+		</nav>
+		<ui-gmap-google-map center='map.center' zoom='map.zoom' class="map">
+		</ui-gmap-google-map>
+		
+
+		<!--<div ng-repeat="point in points">
+			<p>The ID is {{point.id}}</p>
+			<p>The content is {{point.location}}</p>
+		</div>-->
+		
+	</div>
+</body>
+</html>
