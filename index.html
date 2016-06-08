@@ -19,19 +19,24 @@
 	<div class="container theme-showcase">
 		<nav class="navbar navbar-inverse navbar-fixed-top">	
 				<div class="navbar-header">
-					<img class="img-rounded" src=".\icon.png" alt="C" width="50" height="50"/>
+					<img class="img-rounded" src="icon.png" alt="C" width="50" height="50"/>
 				</div>
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">CleanCity</a>
 				</div>
 		</nav>
 		<ui-gmap-google-map center='map.center' zoom='map.zoom' class="map">
+			<ui-gmap-marker  ng-repeat="marker in map.markers" coords="marker.coords" idkey="marker.id"></ui-gmap-marker>
+			<!--<ui-gmap-marker ng-repeat="m in map2.markers3" icon="m.icon" coords="m.coords" click="map2.onMarkerClick(m)" idkey="m.id">-->
 		</ui-gmap-google-map>
 		
 
 		<!--<div ng-repeat="point in points">
 			<p>The ID is {{point.id}}</p>
 			<p>The content is {{point.location}}</p>
+			<p>The content is {{point.latitude}}</p>
+			<p>The content is {{point.longitude}}</p>
+			<br>
 		</div>-->
 		
 	</div>
