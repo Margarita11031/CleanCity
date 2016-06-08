@@ -1,6 +1,7 @@
 
 
 var app= angular.module("angCleanCity",['uiGmapgoogle-maps']);
+//var app= angular.module("angCleanCity",{"angular-simple-logger": "^0.1.7","angular-google-maps": "^2.3.1"});
 
 app.controller('myCtrl', function($scope, $http){
 	$scope.map = {
