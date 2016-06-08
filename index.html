@@ -10,7 +10,8 @@
 	<script language="JavaScript" src="angular-simple-logger.js"></script>
 	<script language="JavaScript" src="lodash.min.js"></script>	
 	<script language="JavaScript" src="angular-google-maps.min.js"></script>
-	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>-->
+	<script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
 	<script language="JavaScript" src="Generic.js"></script>
 	<script language="JavaScript" src="Angular.js"></script>
     <title>CleanCity</title>
@@ -25,7 +26,7 @@
 					<a class="navbar-brand" href="#">CleanCity</a>
 				</div>
 		</nav>
-		<ui-gmap-google-map center='map.center' zoom='map.zoom' class="map">
+		<ui-gmap-google-map center='map.center' zoom='map.zoom' class="map" id="map-container">
 			<ui-gmap-marker  ng-repeat="marker in map.markers" coords="marker.coords" idkey="marker.id"></ui-gmap-marker>
 			<!--<ui-gmap-marker ng-repeat="m in map2.markers3" icon="m.icon" coords="m.coords" click="map2.onMarkerClick(m)" idkey="m.id">-->
 		</ui-gmap-google-map>
